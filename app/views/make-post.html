@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Bootstrap CSS, TempusDominus CSS, FontAwesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  <title>Event App</title>
+</head>
+
+<body>
+  <h1 align='center'><strong>Make a Post</strong></h1>
+  <form class="" action="/post-events/post-preview" method="post">
+    <div class="col-sm">
+      <div class="form-group">
+        <label for="event-title">Event Title</label>
+        <input type="text" id="event-title" class="form-control">
+      </div>
+      <!-- Implementing date/time-->
+      <div class="form-group">
+        <label for="date-time">Date and Time</label>
+        <div class="form-group">
+          <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+            <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="form-group">
+        <label for="event-location">Event Location</label>
+        <input type="text" id="event-location" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="short-description">Short Description</label>
+        <textarea class="form-control" id="short-description" rows="2" placeholder="max 140 characters"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="full-description">Full Description</label>
+        <textarea class="form-control" id="full-description" rows="5"></textarea>
+      </div>
+      <!-- I want to be able to have option to add multiple names-->
+      <div class="form-group">
+        <label for="event-sponsors">Event Sponsors</label>
+        <input type="text" id="event-sponsors" class="form-control" placeholder="Separate each club with a comma">
+      </div>
+      <div class="form-group">
+        <label for="event-category">Event Category</label>
+        <select class="form-control" id="event-category">
+          <option>Academic</option>
+          <option>Arts</option>
+          <option>Athletics</option>
+          <option>Career Planning</option>
+          <option>Social</option>
+        </select>
+      </div>
+      <label for="customFile">Upload a Poster</label>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="custom-file">
+        <label class="custom-file-label" for="customFile">Upload from Phone</label>
+      </div>
+      <div class="flex-container">
+        <button onclick="location.href='/post-events';" type="reset" class="btn btn-secondary">Delete</button>
+        <button onclick="location.href='/post-events/post-preview';" type="submit" class="btn btn-secondary">Preview</button>
+      </div>
+
+
+    </div>
+
+  </form>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Moment.js and TempusDominus Bootstrap -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+  <!-- JS for date-time -->
+  <script type="text/javascript">
+    $.extend($.fn.datetimepicker.Constructor.Default, {
+      icons: {
+        time: 'far fa-clock',
+        date: 'far fa-calendar',
+        up: 'fas fa-arrow-up',
+        down: 'fas fa-arrow-down',
+        previous: 'fas fa-chevron-left',
+        next: 'fas fa-chevron-right',
+        today: 'far fa-calendar-check-o',
+        clear: 'far fa-trash',
+        close: 'far fa-times'
+      }
+    });
+    $(function() {
+      $('#datetimepicker1').datetimepicker();
+    });
+  </script>
+
+</body>
+
+</html>

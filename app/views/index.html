@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title> Social Event App </title>
+    <link rel="stylesheet" type="text/css" href="./home.css" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Interweavers" content="Social Event App">
+  </head>
+
+<!-- script src="home.js"></script -->
+
+<div class="wrapper">
+  <div class="hf">
+    {{> header}}
+  </div>
+
+  <body>
+  <div class= "grid-container">
+      <!-- for each user task, make grid-->
+
+      <div class= "ep-events">
+        <div class="user-button">
+          <a class="square container ex" href="/explore-events" >Explore Events</a>
+<!--            <img class= "square-img" src="./img/explore-img.jpg">-->
+<!--            <a class= "square-link" href="./explore-events.html" >Explore Events</a>-->
+          </a>
+        </div>
+
+        <div class="explore-stories">
+          <div class="circle container">
+            <img class= "circle-img center" src="{{circle1}}">
+          </div>
+          <div class="circle container">
+            <img class="circle-img center" src="{{circle2}}">
+          </div>
+          <div class="circle container">
+            <img class="circle-img center" src="{{circle3}}">
+          </div>
+        </div>
+      </div>
+
+      <div class= "ep-events">
+        <div class="user-button">
+          <a class="square container po" href="/post-events" >Post Events</a>
+            <!--            <img class= "square-img" src="./img/explore-img.jpg">-->
+<!--            <a class= "square-link" href="./post-events.html" >Post Events</a>-->
+          </a>
+      </div>
+  </div>
+  </div>
+  </body>
+
+  <div class="hf">
+    {{> footer}}
+  </div>
+</div>
+
+
+</html>
