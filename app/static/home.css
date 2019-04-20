@@ -41,6 +41,12 @@ html, body{
   display: grid;
   justify-content: center;
 }
+.e-background{
+  background-image: url(./img/green-water-img.jpg);
+}
+.p-background{
+  background-image: url(./img/blue-water-img.jpg);
+}
 .user-button {
   /*float: left;*/
   /*text-align: center;*/
@@ -65,10 +71,54 @@ html, body{
   text-align: center;
 }
 .ex{
-  background-image: url(./img/bowdoin-winter-img.jpg);
+  /*background-image: url(./img/bowdoin-winter-img.jpg);*/
+  background: pink;
 }
 .po{
-  background-image: url(./img/bowdoin-fall1-img.jpg);
+  /*background-image: url(./img/bowdoin-fall1-img.jpg);*/
+  background: pink;
+}
+.btn{
+  display: inline-grid;
+  padding: 5px 5px;
+  border-width: 3px;
+  line-height: 2;
+  border-style: solid;
+  background: transparent;
+  position: relative;
+  color: #FF006A;
+  border-color: #FF006A;
+}
+.btn:before{
+  display: inline-grid;
+  background-color: rgba(255, 149, 0, 0.4);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(0.6em, -0.3em);
+  transition: transform 0.2s, background-color 0.2s;
+}
+/*.btn:hover{*/
+/*  transform: translate(0.2em, -01em);*/
+/*}*/
+.btn:hover:before{
+  transform: translate(-0.4em, 0.4em);
+}
+
+.btn:active {
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
+}
+.btn:active:before {
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(255, 149, 0, 0.5);
+}
+.btn:before {
+  background-color: rgba(255, 149, 0, 0.4);
 }
 /*.square-img{*/
 /*  height: 90%;*/
@@ -142,29 +192,37 @@ html, body{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /*background-color: gray;*/
   /*padding: 2%;*/
-  grid-gap: 10%;
-  height: 100%;
+  /*grid-gap: 10%;*/
+  /*height: 100%;*/
 }
 .emoji{
   display: inline-grid;
   text-align: center;
   font-size: 6vw;
 }
-a:link{
-  text-decoration: none;
-}
-a:hover {
-  background: rgba(0,0,0,0.44);
-}
-a:active {
-  background: rgba(0,0,0,0.62);
-}
-.button-container{
+/*.button:link{*/
+/*  text-decoration: none;*/
+/*}*/
+/*button:hover {*/
+/*  background: rgba(0,0,0,0.44);*/
+/*}*/
+/*button:active {*/
+/*  background: rgba(0,0,0,0.62);*/
+/*}*/
+.nav-btn{
   /*background: cornflowerblue;*/
-  display: inline-grid;
-  text-align: center;
+  /*display: inline-grid;*/
+  /*text-align: center;*/
   /*grid-template-rows: 50% 50%;*/
+  border: transparent;
+  background-color: rgba(255, 149, 0, 0.4);
+  color: #FF006A;
+  /*font-size: 15em;*/
 }
+.nav-btn img{
+  height: auto;
+}
+
 .img-container {
   background-color: #bbb;
   padding: 5%;
