@@ -2,6 +2,7 @@
   <head>
     <title> Social Event App </title>
     <link rel="stylesheet" type="text/css" href="./home.css" >
+    <link rel="stylesheet" type="text/css" href="./style.css" >
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Interweavers" content="Social Event App">
@@ -18,12 +19,17 @@
   <div class= "grid-container">
       <!-- for each user task, make grid-->
 
-      <div class= "ep-events">
+      <div class= "ep-events e-background">
         <div class="user-button">
-          <a class="square container ex" href="/explore-events" >Explore Events</a>
+<!--          <div class="square container ex">-->
+            <button onclick="location.href='/explore-events';" class="btn">
+              Explore Events
+            </button>
+<!--          </div>-->
+
+<!--          <a class="square container ex" href="/explore-events" >Explore Events</a>-->
 <!--            <img class= "square-img" src="./img/explore-img.jpg">-->
 <!--            <a class= "square-link" href="./explore-events.html" >Explore Events</a>-->
-          </a>
         </div>
 
         <div class="explore-stories">
@@ -39,9 +45,12 @@
         </div>
       </div>
 
-      <div class= "ep-events">
+      <div class= "ep-events p-background">
         <div class="user-button">
-          <a class="square container po" href="/post-events" >Post Events</a>
+          <button onclick="location.href='/post-events';" class="btn">
+            Post An Event
+          </button>
+<!--          <a class="square container po" href="/post-events" >Post Events</a>-->
             <!--            <img class= "square-img" src="./img/explore-img.jpg">-->
 <!--            <a class= "square-link" href="./post-events.html" >Post Events</a>-->
           </a>
