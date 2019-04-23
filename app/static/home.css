@@ -42,10 +42,10 @@ html, body{
   justify-content: center;
 }
 .e-background{
-  background-image: url(./img/green-water-img.jpg);
+  background-image: url(./img/bowdoin-autumn.jpeg);
 }
 .p-background{
-  background-image: url(./img/blue-water-img.jpg);
+  background-image: url(./img/bowdoin-winter.jpg);
 }
 .user-button {
   /*float: left;*/
