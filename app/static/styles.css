@@ -4,11 +4,8 @@
   margin-top: 4%;
 }
 
-/* This is being overidden */
 .card-img{
   width: 50%;
-
-
 }
 
 ul{
@@ -19,11 +16,6 @@ ul{
 .event-list-container{
   padding: 2%;
 
-
-}
-
-.col-md-4{
-  align-items: center;
 }
 
 .col-md-2{
@@ -51,4 +43,8 @@ ul{
 }
 .button:active {
  background: rgba(0,0,0,0.62);
+}
+
+.text{
+  font-family: 'Quicksand', sans-serif;
 }

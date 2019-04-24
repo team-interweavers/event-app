@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
-
 .wrapper{
   display: grid;
   /*align-content: space-around;*/
@@ -9,12 +7,9 @@
   /*min-height: 100%;*/
   height: 100%;
   grid-template-rows: 0% 70% 10%;
-
 }
-body{
+html, body{
   height:100%;
-  font-family: 'Quicksand', sans-serif;
-
 }
 .grid-container {
   display: grid;
@@ -47,10 +42,12 @@ body{
   justify-content: center;
 }
 .e-background{
-  background-image: url(./img/bowdoin-autumn.jpeg);
+  background-image: url(./img/bowdoin-fall.jpeg);
+  background-position:7% 75%;
 }
 .p-background{
-  background-image: url(./img/bowdoin-winter.jpg);
+  background-image: url(./img/bowdoin-winter-img.jpg);
+  background-position: 93%  18%;
 }
 .user-button {
   /*float: left;*/
@@ -241,4 +238,8 @@ body{
 .header{
   align-items: center;
   justify-content: center;
+}
+
+.text{
+  font-family: 'Quicksand', sans-serif;
 }
