@@ -60,26 +60,28 @@ html, body{
   /*height: 100%;*/
   /*width: 100%;*/
 }
-.square{
+/* .square{ */
   /*float: left;*/
   /*display: inline-block;*/
-  background-color: #bbb;
-  height: 60%;
+  /* background-color: #bbb;
+  height: 60%; */
   /*width: 100%;*/
-  display: inline-grid;
+  /* display: inline-grid; */
   /*vertically aligns text*/
-  align-items: center;
+  /* align-items: center;
   justify-content: center;
   text-align: center;
-}
-.ex{
+} */
+
+/* .ex{ */
   /*background-image: url(./img/bowdoin-winter-img.jpg);*/
-  background: pink;
-}
-.po{
+  /* background: pink;
+} */
+/* .po{ */
   /*background-image: url(./img/bowdoin-fall1-img.jpg);*/
-  background: pink;
-}
+  /* background: pink;
+} */
+
 .btn{
   display: inline-grid;
   padding: 5px 5px;
@@ -126,7 +128,7 @@ html, body{
 /*  height: 90%;*/
 /*  width: 90%;*/
 /*}*/
-.square-link{
+/* .square-link{
   font-size: 5vw;
   text-align: center;
   /* background: url(./img/explore-img.jpg); */
@@ -148,7 +150,7 @@ html, body{
   overflow: hidden;
   text-indent: 100%;
   white-space:nowrap; */
-}
+} */
 .explore-stories{
   /*float: left;*/
   /*justify-content: space-evenly;*/
@@ -197,11 +199,11 @@ html, body{
   /*grid-gap: 10%;*/
   /*height: 100%;*/
 }
-.emoji{
+/* .emoji{
   display: inline-grid;
   text-align: center;
   font-size: 6vw;
-}
+} */
 /*.button:link{*/
 /*  text-decoration: none;*/
 /*}*/
