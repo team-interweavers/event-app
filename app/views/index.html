@@ -1,12 +1,10 @@
 <html>
   <head>
     <title> Social Event App </title>
-    <link rel="stylesheet" type="text/css" href="./home.css" >
-    <link rel="stylesheet" type="text/css" href="./style.css" >
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Quicksand');
-    </style>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Interweavers" content="Social Event App">
@@ -14,19 +12,19 @@
 
 <!-- script src="home.js"></script -->
 
-<div class="wrapper">
-  <div class="hf">
+<div class="index-wrapper">
+  <div class="index-footer">
     {{> header}}
   </div>
 
   <body>
-  <div class= "grid-container">
+  <div class= "index-grid-container">
       <!-- for each user task, make grid-->
 
       <div class= "ep-events e-background">
         <div class="user-button">
 <!--          <div class="square container ex">-->
-            <button onclick="location.href='/explore-events';" class="btn">
+            <button onclick="location.href='/explore-events';" class="index-btn">
               <p class="text">Explore Events</p>
             </button>
 <!--          </div>-->
@@ -37,13 +35,13 @@
         </div>
 
         <div class="explore-stories">
-          <div class="circle container">
+          <div class="circle-container">
             <img class= "circle-img center" src="{{circle1}}">
           </div>
-          <div class="circle container">
+          <div class="circle-container">
             <img class="circle-img center" src="{{circle2}}">
           </div>
-          <div class="circle container">
+          <div class="circle-container">
             <img class="circle-img center" src="{{circle3}}">
           </div>
         </div>
@@ -51,7 +49,7 @@
 
       <div class= "ep-events p-background">
         <div class="user-button">
-          <button onclick="location.href='/post-events';" class="btn">
+          <button onclick="location.href='/post-events';" class="index-btn">
             <p class="text">Post An Event</p>
           </button>
 <!--          <a class="square container po" href="/post-events" >Post Events</a>-->
@@ -63,7 +61,7 @@
   </div>
   </body>
 
-  <div class="hf">
+  <div class="index-footer">
     {{> footer}}
   </div>
 </div>

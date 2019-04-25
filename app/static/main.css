@@ -1,3 +1,162 @@
-.text{
+body{
   font-family: 'Quicksand', sans-serif;
+}
+
+/* Home page CSS */
+
+.index-wrapper{
+  display: grid;
+  /*align-content: space-around;*/
+  grid-gap: 2%;
+  background-color: ghostwhite;
+  padding: 2%;
+  /*min-height: 100%;*/
+  height: 100%;
+  grid-template-rows: 0 70% 10%;
+}
+
+.index-grid-container {
+  display: grid;
+  /*align-content: space-around;*/
+  grid-gap: 2%;
+  background-color: ghostwhite;
+  /*padding: 2%;*/
+  grid-template-rows: 50% 50%;
+  height: 100%;
+}
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-container {
+  position: relative;
+  color: white;
+}
+
+.ep-events {
+  grid-template-columns: 30% 70%;
+  display: grid;
+  justify-content: center;
+}
+
+.e-background{
+  background-image: url(./img/bowdoin-autumn.jpeg);
+  background-position:7% 75%;
+}
+
+.p-background{
+  background-image: url(./img/bowdoin-winter-img.jpg);
+  background-position: 93%  18%;
+}
+
+.user-button {
+  display: inline-grid;
+  align-items: center;
+
+}
+
+.index-btn{
+  display: inline-grid;
+  font-family: 'Quicksand', sans-serif;
+  padding: 5px 5px;
+  border-width: 3px;
+  line-height: 2;
+  border-style: solid;
+  background: transparent;
+  position: relative;
+  color: #FF006A;
+  border-color: #FF006A;
+}
+
+.index-btn:before{
+  display: inline-grid;
+  background-color: rgba(255, 149, 0, 0.8);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(0.6em, -0.3em);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.index-btn:hover:before{
+  transform: translate(-0.4em, 0.4em);
+}
+
+.index-btn:active {
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
+}
+
+.index-btn:active:before {
+  transition-duration: 0.1s;
+  transform: translate(0, 0);
+  background-color: rgba(255, 149, 0, 0.8);
+}
+
+.index-btn:before {
+  background-color: rgba(255, 149, 0, 0.8);
+}
+
+.explore-stories{
+  grid-template-columns: auto auto auto;
+  display: grid;
+  align-items: center;
+}
+
+.circle{
+  display: inline-block;
+}
+
+.circle-img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+  .circle-img{
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/*FOOTER NAV-BAR*/
+.index-footer{
+  display: grid;
+}
+
+.navbar-grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.emoji{
+  display: inline-grid;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.nav-btn{
+  border: transparent;
+  background-color: rgba(255, 149, 0, 0.4);
+  color: #FF006A;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.nav-btn img{
+  height: auto;
+}
+
+.header{
+  align-items: center;
+  justify-content: center;
 }
