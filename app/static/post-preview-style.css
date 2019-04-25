@@ -30,8 +30,7 @@
   grid-row-end: 2;
   padding-right: .5%;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.2vw;
+  font-size: 5vw;
   line-height: 3em;
   word-spacing: 1.8px;
   color: #000000;
@@ -47,15 +46,25 @@
   grid-row-end: 3;
   padding-right: .5%;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.3vw;
+  font-size: 3.5vw;
   letter-spacing: 0px;
   /* how to auto line-height fit */
-  line-height: 3em;
+  line-height: 1.7em;
   word-spacing: 1.8px;
   color: #000000;
   font-weight: 300;
   place-self: center;
+}
+
+.title {
+  font-size: 4vw;
+  padding-left: 15px;
+}
+
+.texts {
+  font-size: 3.5vw;
+  padding-left: 20px;
+  text-indent: 50px
 }
 
 .buttons {
@@ -65,6 +74,34 @@ align-self: center;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+.button {
+  display: inline-block;
+  color: rgba(0,0,0,1);
+  cursor:pointer;
+  font-size: 3vw;
+  line-height: 2%;
+  padding: 5.2%;
+  border-radius: 8px;
+  background-color: rgba(0,0,0,0.26);
+  margin-left: 1%;
+  margin-right: 1%;
+  font-weight: 700;
+}
+.button:hover {
+  background: rgba(0,0,0,0.44);
+}
+.button:active {
+  background: rgba(0,0,0,0.62);
+}
+
+ul {
+  column-count: 2;
+  column-width: 50%;
+  font-size: 3.5vw;
+  line-height: 4em;
+  padding-inline-start: 4%;
 }
 
 .participant-list {
@@ -86,27 +123,6 @@ align-self: center;
   grid-row-end: 6;
 }
 
-.button {
-  display: inline-block;
-  color: rgba(0,0,0,1);
-  cursor:pointer;
-  font-size: 2.5vw;
-  line-height: 2%;
-  padding: 5.2%;
-  border-radius: 8px;
-  background-color: rgba(0,0,0,0.26);
-  margin-left: 1%;
-  margin-right: 1%;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.button:hover {
-  background: rgba(0,0,0,0.44);
-}
-.button:active {
-  background: rgba(0,0,0,0.62);
-}
-
 .icon {
   height:15%;
   width:15%;
@@ -115,34 +131,12 @@ align-self: center;
   bottom:-10px;
 }
 
-.title {
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3vw;
-  padding-left: 15px;
-}
-
-.texts {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.3vw;
-  padding-left: 20px;
-  text-indent: 50px
-}
-
 .done-button {
 align-self: center;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
-}
-
-ul {
-  column-count: 2;
-  column-width: 50%;
-  font-size: 1.8vw;
-  line-height: 4em;
-  padding-inline-start: 4%;
 }
 
 .scroll {
