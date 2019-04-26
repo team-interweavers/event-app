@@ -1,14 +1,15 @@
-.press-purple{
+.index-btn-purple{
 --p: #9C27B0;
 --c: #fff;
 --h: #af2cc5;
 --a: #771e86;
 }
 
-.press{
+.index-btn{
 box-sizing:border-box;
-background-color:var(--p);border:2px solid var(--p);
-color:var(--c);
+background-color:var(--c);
+border:2px solid var(--p);
+color:var(--p);
 cursor:pointer;
 display:inline-block;
 font-size:1em;
@@ -16,18 +17,14 @@ margin:0;
 padding:0.5em 0.75em;
 text-align:center;
 text-decoration:none;
-transition:background 0.15s linear;
-}
-
-
-
-.press-round{
+transition:background 0.20s linear;
+/*    round edges */
 border-radius:8px;
-}
-.press-ghost{
+background-color: var(--c);
 color: var(--p);
-background-color:transparent
 }
 
-.press-ghost:hover:not(:disabled){
-color:var(--c)
+.index-btn:hover{
+background-color: var(--p);
+color: var(--c);
+}

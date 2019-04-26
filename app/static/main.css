@@ -68,50 +68,50 @@ body{
     justify-self: center;
 }
 
-.index-btn{
-  display: inline-grid;
-  font-family: 'Quicksand', sans-serif;
-  padding: 5px 5px;
-  border-width: 3px;
-  line-height: 2;
-  border-style: solid;
-  background: transparent;
-  position: relative;
-  color: #FF006A;
-  border-color: #FF006A;
-}
+/*.index-btn{*/
+/*  display: inline-grid;*/
+/*  font-family: 'Quicksand', sans-serif;*/
+/*  padding: 5px 5px;*/
+/*  border-width: 3px;*/
+/*  line-height: 2;*/
+/*  border-style: solid;*/
+/*  background: transparent;*/
+/*  position: relative;*/
+/*  color: #FF006A;*/
+/*  border-color: #FF006A;*/
+/*}*/
 
-.index-btn:before{
-  display: inline-grid;
-  background-color: rgba(255, 149, 0, 0.8);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: translate(0.6em, -0.3em);
-  transition: transform 0.2s, background-color 0.2s;
-}
+/*.index-btn:before{*/
+/*  display: inline-grid;*/
+/*  background-color: rgba(255, 149, 0, 0.8);*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*  transform: translate(0.6em, -0.3em);*/
+/*  transition: transform 0.2s, background-color 0.2s;*/
+/*}*/
 
-.index-btn:hover:before{
-  transform: translate(-0.4em, 0.4em);
-}
+/*.index-btn:hover:before{*/
+/*  transform: translate(-0.4em, 0.4em);*/
+/*}*/
 
-.index-btn:active {
-  transform: translate(0, 0);
-  transition-duration: 0.1s;
-}
+/*.index-btn:active {*/
+/*  transform: translate(0, 0);*/
+/*  transition-duration: 0.1s;*/
+/*}*/
 
-.index-btn:active:before {
-  transition-duration: 0.1s;
-  transform: translate(0, 0);
-  background-color: rgba(255, 149, 0, 0.8);
-}
+/*.index-btn:active:before {*/
+/*  transition-duration: 0.1s;*/
+/*  transform: translate(0, 0);*/
+/*  background-color: rgba(255, 149, 0, 0.8);*/
+/*}*/
 
-.index-btn:before {
-  background-color: rgba(255, 149, 0, 0.8);
-}
+/*.index-btn:before {*/
+/*  background-color: rgba(255, 149, 0, 0.8);*/
+/*}*/
 
 .explore-stories{
     grid-template-columns: auto auto auto auto;
@@ -157,13 +157,16 @@ body{
   background-color: rgba(255, 149, 0, 0.4);
   color: #FF006A;
   font-family: 'Quicksand', sans-serif;
-
 }
 
 .nav-btn img{
   height: auto;
+    margin-top: 2px;
 }
 
+.nav-btn p{
+    margin-top: 2px;
+}
 .header{
   align-items: center;
   justify-content: center;
