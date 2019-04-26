@@ -330,10 +330,6 @@ align-self: center;
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-table{
-  border-collapse: collapse;
-}
-
 li{
   line-height: 50px;
 }
