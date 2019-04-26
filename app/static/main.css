@@ -68,49 +68,35 @@ body{
     justify-self: center;
 }
 
+.index-btn-purple{
+--p: #9C27B0;
+--c: #fff;
+--h: #af2cc5;
+--a: #771e86;
+}
+
 .index-btn{
-  display: inline-grid;
-  font-family: 'Quicksand', sans-serif;
-  padding: 5px 5px;
-  border-width: 3px;
-  line-height: 2;
-  border-style: solid;
-  background: transparent;
-  position: relative;
-  color: #FF006A;
-  border-color: #FF006A;
+box-sizing:border-box;
+background-color:var(--c);
+border:2px solid var(--p);
+color:var(--p);
+cursor:pointer;
+display:inline-block;
+font-size:1em;
+margin:0;
+padding:0.5em 0.75em;
+text-align:center;
+text-decoration:none;
+transition:background 0.20s linear;
+/*    round edges */
+border-radius:8px;
+background-color: var(--c);
+color: var(--p);
 }
 
-.index-btn:before{
-  display: inline-grid;
-  background-color: rgba(255, 149, 0, 0.8);
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: translate(0.6em, -0.3em);
-  transition: transform 0.2s, background-color 0.2s;
-}
-
-.index-btn:hover:before{
-  transform: translate(-0.4em, 0.4em);
-}
-
-.index-btn:active {
-  transform: translate(0, 0);
-  transition-duration: 0.1s;
-}
-
-.index-btn:active:before {
-  transition-duration: 0.1s;
-  transform: translate(0, 0);
-  background-color: rgba(255, 149, 0, 0.8);
-}
-
-.index-btn:before {
-  background-color: rgba(255, 149, 0, 0.8);
+.index-btn:hover{
+background-color: var(--p);
+color: var(--c);
 }
 
 .explore-stories{
