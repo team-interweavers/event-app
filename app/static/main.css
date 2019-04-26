@@ -3,26 +3,33 @@ body{
 }
 
 /* Home page CSS */
-
-.index-wrapper{
-  display: grid;
-  /*align-content: space-around;*/
-  grid-gap: 2%;
-  background-color: ghostwhite;
-  padding: 2%;
-  /*min-height: 100%;*/
-  height: 100%;
-  grid-template-rows: 0 70% 10%;
+.button-container {
+    /*grid-template-columns: 30% 70%;*/
+    display: grid;
+    /*justify-content: center;*/
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .index-grid-container {
-  display: grid;
-  /*align-content: space-around;*/
-  grid-gap: 2%;
-  background-color: ghostwhite;
-  /*padding: 2%;*/
-  grid-template-rows: 50% 50%;
-  height: 100%;
+    display: grid;
+    /*align-content: space-around;*/
+    grid-gap: 2%;
+    background-color: ghostwhite;
+    /*padding: 2%;*/
+    grid-template-rows: 40% 20% 40%;
+    height: 100%;
+}
+
+.index-wrapper{
+    display: grid;
+    /*align-content: space-around;*/
+    grid-gap: 2%;
+    background-color: ghostwhite;
+    padding: 2%;
+    /*min-height: 100%;*/
+    height: 100%;
+    grid-template-rows: 0 80% 10%;
 }
 
 .center{
@@ -55,9 +62,10 @@ body{
 }
 
 .user-button {
-  display: inline-grid;
-  align-items: center;
-
+    display: inline-grid;
+    align-items: center;
+    width: 70%;
+    justify-self: center;
 }
 
 .index-btn{
@@ -106,9 +114,9 @@ body{
 }
 
 .explore-stories{
-  grid-template-columns: auto auto auto;
-  display: grid;
-  align-items: center;
+    grid-template-columns: auto auto auto auto;
+    display: grid;
+    align-items: center;
 }
 
 .circle{
@@ -182,10 +190,10 @@ body{
   margin-top:15%;
 }
 
-/* .responsive {
+.responsive {
   width: 100%;
   height: auto;
-} */
+}
 
 .event-title {
 
@@ -221,9 +229,10 @@ body{
   place-self: center;
 }
 
-.title {
+.post-title {
   font-size: 4vw;
   padding-left: 15px;
+  margin-bottom: 0;
 }
 
 .texts {
@@ -260,16 +269,16 @@ body{
   background: rgba(0,0,0,0.62);
 }
 
-ul {
-  column-count: 2;
-  column-width: 50%;
-  font-size: 3.5vw;
-  line-height: 4em;
-  padding-inline-start: 4%;
+.post-ul {
+  /* column-count: 2;
+  column-width: 50%; */
+  font-size: 4vw;
+  /* line-height: 4em; */
+  padding-left: 15px;
 }
 
 .participant-list {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background-color: rgba(0,0,0,0.13);
   border-radius: 20px;
   grid-column-start: 1;
@@ -287,12 +296,13 @@ ul {
   grid-row-end: 6;
 }
 
-.icon {
-  height:15%;
-  width:15%;
-  margin-right: 1em;
+.person-icon {
+  width:10%;
+  vertical-align: middle;
+  padding-right: 10px;
+  /* margin-right: 1em;
   position: relative;
-  bottom:-10px;
+  bottom:-10px; */
 }
 
 .done-button {
@@ -318,4 +328,16 @@ align-self: center;
     border-radius: 4px;
     background-color: rgba(0,0,0,.5);
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+table{
+  border-collapse: collapse;
+}
+
+li{
+  line-height: 50px;
+}
+
+.post-text{
+  padding-left: 15px;
 }

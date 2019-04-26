@@ -4,7 +4,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
-    
+    <link rel="stylesheet" href="/reformat.css">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Interweavers" content="Social Event App">
@@ -20,21 +21,24 @@
   <body>
   <div class= "index-grid-container">
       <!-- for each user task, make grid-->
+      <div class="e-background button-container">
+          <div class="user-button">
+              <button onclick="location.href='/explore-events';" class="index-btn">
+                  <p class="text">Explore Events</p>
+              </button>
+          </div>
+      </div>
 
-      <div class= "ep-events e-background">
-        <div class="user-button">
-<!--          <div class="square container ex">-->
-            <button onclick="location.href='/explore-events';" class="index-btn">
-              <p class="text">Explore Events</p>
-            </button>
+<!--      <div class= "ep-events e-background">-->
+<!--        <div class="user-button">-->
+<!--&lt;!&ndash;          <div class="square container ex">&ndash;&gt;-->
+<!--            <button onclick="location.href='/explore-events';" class="index-btn">-->
+<!--              <p class="text">Explore Events</p>-->
+<!--            </button>-->
 <!--          </div>-->
 
-<!--          <a class="square container ex" href="/explore-events" >Explore Events</a>-->
-<!--            <img class= "square-img" src="./img/explore-img.jpg">-->
-<!--            <a class= "square-link" href="./explore-events.html" >Explore Events</a>-->
-        </div>
 
-        <div class="explore-stories">
+      <div class="explore-stories">
           <div class="circle-container">
             <img class= "circle-img center" src="{{circle1}}">
           </div>
@@ -44,10 +48,12 @@
           <div class="circle-container">
             <img class="circle-img center" src="{{circle3}}">
           </div>
-        </div>
+          <div class="circle-container">
+              <img class="circle-img center" src="{{circle3}}">
+          </div>
       </div>
 
-      <div class= "ep-events p-background">
+      <div class= "p-background button-container">
         <div class="user-button">
           <button onclick="location.href='/post-events';" class="index-btn">
             <p class="text">Post An Event</p>
