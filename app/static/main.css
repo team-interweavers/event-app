@@ -341,3 +341,32 @@ li{
 .post-text{
   padding-left: 15px;
 }
+
+/*Make a post page and event listing page*/
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.card-img{
+  width: 50%;
+}
+
+.card-info{
+  list-style-type: none;
+  font-family: 'Quicksand', sans-serif;
+  padding-left: 0;
+}
+
+.event-list-container{
+  padding: 2%;
+
+}
+
+.col-md-2{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
