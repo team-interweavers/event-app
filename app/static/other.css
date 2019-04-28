@@ -1,8 +1,8 @@
 .index-btn-purple{
---p: #9C27B0;
---c: #fff;
---h: #af2cc5;
---a: #771e86;
+--p: #000000;
+--c: #C6ADE4;
+--h: #DB6900;
+--a: #3A0332;
 }
 
 .index-btn{
@@ -25,6 +25,11 @@ color: var(--p);
 }
 
 .index-btn:hover{
-background-color: var(--p);
+background-color: var(--a);
+color: var(--c);
+}
+
+.index-btn:active{
+background-color: var(--a);
 color: var(--c);
 }

@@ -5,6 +5,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/other.css">
   <title>Create Event Post</title>
 </head>
 <body class="text">
@@ -13,7 +14,7 @@
       <img src="/img/prohibition-poster.png" alt="Prohibition Party event poster hosted at Howell House" class="responsive">
     </div>
     <div class="event-title">
-      <p>Prohibition</p>
+      <p style="font-weight: 2000;">Prohibition</p>
     </div>
     <div class="event-details">
     <!--Need to enable input of details-->
@@ -42,7 +43,7 @@
     </div>
 
     <div class="done-button">
-      <button onclick="location.href= '/post-events/post-preview/event-desc'" class="button" style="float: right;">Submit</button>
+      <button onclick="location.href= '/post-events/post-preview/event-desc'" class="index-btn index-btn-purple" style="float: right;">Submit</button>
 
 <!--      <script>-->
 <!--          function visitPage() {-->
@@ -55,4 +56,10 @@
 
   </section>
 </body>
+
+<div class="index-footer post-footer">
+  {{> footer}}
+</div>
+
+
 </html>

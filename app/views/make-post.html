@@ -13,6 +13,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/other.css">
 
   <title>Event App</title>
 </head>
@@ -71,8 +72,8 @@
         <label class="custom-file-label" for="customFile" class="text">Upload from Phone</label>
       </div>
       <div class="flex-container">
-        <button onclick="location.href='/post-events';" type="reset" class="btn btn-secondary">Delete</button>
-        <button onclick="location.href='/post-events/post-preview';" type="submit" class="btn btn-secondary">Preview</button>
+        <button onclick="location.href='/post-events';" type="reset" class="index-btn index-btn-purple">Delete</button>
+        <button onclick="location.href='/post-events/post-preview';" type="submit" class="index-btn index-btn-purple">Preview</button>
       </div>
 
 
@@ -111,5 +112,8 @@
   </script>
 
 </body>
+<div class="index-footer">
+  {{> footer}}
+</div>
 
 </html>

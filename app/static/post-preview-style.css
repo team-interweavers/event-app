@@ -132,11 +132,18 @@ ul {
 }
 
 .done-button {
-align-self: center;
+  align-self: center;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
+}
+
+.index-footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
 }
 
 .scroll {
