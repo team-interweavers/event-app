@@ -47,6 +47,10 @@ app.get('/static/post-preview-style.css', function (req, res) {
   res.render('post-preview-style')
 });
 
+app.get('/', function (req, res) {
+  res.render('index')
+});
+
 app.listen(port, function () {
   console.log('Example app listening on port', port);
 });

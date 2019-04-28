@@ -283,7 +283,7 @@ color: var(--c);
 
 .post-btns {
   /* place-self: center; */
-  margin-left: 7%;
+  margin-left: 5%;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -291,18 +291,19 @@ color: var(--c);
 }
 
 .post-btn {
-  color: rgba(0,0,0,1);
+  color: #C4C4C4;
   cursor:pointer;
-  border:1px solid #000000;
+  /* border:1px solid #000000; */
   font-size: 3vw;
   line-height: 70%;
   padding: 3%;
-  border-radius: 3px;
-  background-color: #C6ADE4;
+  border-radius: 8px;
+  background-color: #3A0332;
   font-family: 'Quicksand', sans-serif;
 }
 .post-btn:hover {
-  background: #3A0332;
+  background: #C4C4C4;
+  color: #000000;
 }
 .post-btn:active {
   background: #3A0332);
@@ -318,7 +319,7 @@ color: var(--c);
 
 .participant-list {
   font-family: 'Quicksand', sans-serif;
-  background-color: rgba(198, 173, 228, 0.3);
+  background-color: #C4C4C4;
   border-radius: 20px;
   grid-column-start: 1;
   grid-column-end: 3;
