@@ -12,7 +12,7 @@ Download [Node.js](https://nodejs.org/en/)
 3. Type node app.js
 4. On a browser, go to [localhost:3000](localhost:3000)
 
-## User Input
+## User Input for the App
 When testing the app, please input the following information in the **Post an Event** page.
 
 **Event Title:** Prohibition
@@ -30,6 +30,9 @@ When testing the app, please input the following information in the **Post an Ev
 **Event Category:** Social
 
 **Upload a Poster:** Select the prohibition-poster, which should be in your computer's Downloads folder
+
+## User Input for Blink
+Populate the equivalent fields in Blink with the information found in the **User Input for the App** section above. For any field that isn't covered, choose the default option or something random.
 
 ## Acknowledgements
 * [Bootstrap](https://getbootstrap.com/)
