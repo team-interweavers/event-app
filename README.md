@@ -15,21 +15,21 @@ Download [Node.js](https://nodejs.org/en/)
 ## User Input
 When testing the app, please input the following information in the **Post an Event** page.
 
-**Event Title:** Prohibition
+***Event Title:*** Prohibition
 
-**Date and Time:** April 20, 2019 @ 8pm
+***Date and Time:*** April 20, 2019 @ 8pm
 
-**Event Location:** Howell House
+***Event Location:*** Howell House
 
-**Short Description:** Join us for our annual roarin' twenties party!
+***Short Description:*** Join us for our annual roarin' twenties party!
 
-**Full Description:** Take a step back in time and party like it's 1929! Come to Howell's speakeasy for good music, food, mocktails, and games. Dressing up is not required.
+***Full Description:*** Take a step back in time and party like it's 1929! Come to Howell's speakeasy for good music, food, mocktails, and games. Dressing up is not required.
 
-**Event Sponsors:** Howell House
+***Event Sponsors:*** Howell House
 
-**Event Category:** Social
+***Event Category:*** Social
 
-**Upload a Poster:** Select the prohibition-poster, which should be in your computer's Downloads folder
+***Upload a Poster:*** Select the prohibition-poster, which should be in your computer's Downloads folder
 
 ## Acknowledgements
 * [Bootstrap](https://getbootstrap.com/)
