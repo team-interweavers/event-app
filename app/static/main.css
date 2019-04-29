@@ -290,6 +290,8 @@ color: var(--c);
   grid-row-start: 3;
   grid-row-end: 4;
   margin-bottom: 11.5%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .post-btn {
@@ -299,7 +301,7 @@ color: var(--c);
   font-size: 3vw;
   line-height: 70%;
   padding: 3%;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: #C6ADE4;
   font-family: 'Quicksand', sans-serif;
 }
