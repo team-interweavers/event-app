@@ -35,6 +35,14 @@ app.get('/post-events/post-preview/event-desc', function (req, res) {
   res.render('event-desc', {eventDescUrl: "/post-events/post-preview/event-desc" })
 });
 
+//this is button event
+// var x=window.document.getElementById("rsvp");
+// x.addEventListener("click", changeText);
+//
+// function changeText(){
+//   x.innerHTML="Cancel RSVP";
+// }
+
 app.get('/post-events', function (req, res) {
   res.render('make-post')
 });

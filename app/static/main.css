@@ -282,12 +282,14 @@ color: var(--c);
 }
 
 .post-btns {
-  /* place-self: center; */
+  display: inline-flex;
+  justify-content: space-between;
   margin-left: 5%;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+  margin-bottom: 11.5%;
 }
 
 .post-btn {
@@ -297,7 +299,7 @@ color: var(--c);
   font-size: 3vw;
   line-height: 70%;
   padding: 3%;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #C6ADE4;
   font-family: 'Quicksand', sans-serif;
 }
@@ -325,8 +327,8 @@ color: var(--c);
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .event-description {

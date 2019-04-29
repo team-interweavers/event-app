@@ -27,8 +27,15 @@
     </div>
     <div class="post-btns">
       <button class="post-btn">❤️</button>
-      <button class="post-btn">RSVP</button>
-      <button class="post-btn">Cancel RSVP</button>
+      <button class="post-btn" id="rsvp" onclick="change()">RSVP</button>
+      <script>
+        function change() // no ';' here
+        {
+            var elem = document.getElementById("rsvp");
+            if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
+            else {elem.innerHTML = "RSVP";}
+        }
+      </script>
     </div>
     <div class="participant-list">
       <p class="post-title"><strong>People Attending this Event<br></strong></p>
