@@ -42,8 +42,9 @@ form.search-bar input[type=text] {
     border: 1px solid grey;
     float: left;
     width: 80%;
-    background: #f1f1f1;
-    border-radius: 8px;
+    background: #e9ecef;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     height: 50%;
 }
 
@@ -82,4 +83,6 @@ form.search-bar{
 form.search-bar button{
     width: 20%;
     height: 50%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
