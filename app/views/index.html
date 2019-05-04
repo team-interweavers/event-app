@@ -5,6 +5,8 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/other.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +21,7 @@
   </div>
 
   <body>
-  <div class= "index-grid-container">
+  <div class= "index-grid-container text">
       <!-- for each user task, make grid-->
       <div class="e-background button-container">
           <div class="user-button">
@@ -62,9 +64,16 @@
 <!--          <a class="square container po" href="/post-events" >Post Events</a>-->
             <!--            <img class= "square-img" src="./img/explore-img.jpg">-->
 <!--            <a class= "square-link" href="./post-events.html" >Post Events</a>-->
-          </a>
+        </div>
       </div>
-  </div>
+
+      <div class="search-bar-div text">
+          <form class="search-bar" action="/action_page.php">
+              <input type="text" placeholder="My Events" name="search2">
+              <button onclick= "location.href= '/event-search';" class= "index-btn index-btn-purple" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+      </div>
+
   </div>
   </body>
 

@@ -19,7 +19,7 @@ text-align:center;
 text-decoration:none;
 transition:background 0.20s linear;
 /*    round edges */
-border-radius:8px;
+border-radius: 8px;
 background-color: var(--c);
 color: var(--p);
 }
@@ -32,4 +32,54 @@ color: var(--c);
 .index-btn:active{
 background-color: var(--a);
 color: var(--c);
+}
+
+
+/*SEARCH BAR*/
+form.search-bar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 8px;
+    height: 50%;
+}
+
+/*form.search-bar button {*/
+/*    float: left;*/
+/*    width: 20%;*/
+/*    padding: 10px;*/
+/*    background: #2196F3;*/
+/*    color: white;*/
+/*    font-size: 17px;*/
+/*    border: 1px solid grey;*/
+/*    border-left: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*form.search-bar button:hover {*/
+/*    background: #0b7dda;*/
+/*}*/
+
+/*form.search-bar::after {*/
+/*    content: "";*/
+/*    clear: both;*/
+/*    display: table;*/
+
+
+.search-bar-div{
+    display: grid;
+}
+
+form.search-bar{
+    justify-self: center;
+    margin: 0;
+    width: 70%;
+}
+
+form.search-bar button{
+    width: 20%;
+    height: 50%;
 }
