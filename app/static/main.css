@@ -204,7 +204,7 @@ color: var(--c);
 .nav-btn p{
     margin-top: 2px;
 }
-.header{
+.index-header{
   align-items: center;
   justify-content: center;
 }
@@ -451,4 +451,29 @@ ul.breadcrumbs li a {
 ul.breadcrumbs li a:hover {
   color: #01447e;
   text-decoration: underline;
+}
+
+/* Filter stylesheet */
+.filter-grid-container {
+    /* display: grid; */
+    /*align-content: space-around;*/
+    grid-gap: 2%;
+    background-color: ghostwhite;
+    /*padding: 2%;*/
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 100%;
+}
+
+.checklist {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 4%;
+}
+
+.map {
+
+}
+
+.menu {
+
 }

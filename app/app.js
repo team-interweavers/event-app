@@ -59,6 +59,10 @@ app.get('/', function (req, res) {
   res.render('index')
 });
 
+app.get('/explore-events', function (req, res) {
+  res.render('filter-page')
+});
+
 app.listen(port, function () {
   console.log('Example app listening on port', port);
 });
