@@ -7,11 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <!-- <link href="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.min.css" rel="stylesheet"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script> -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <!-- <script type="text/javascript" src=""></script> -->
+
+  <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="chosen.jquery.js" type="text/javascript"></script>
+  <script src="prism.js" type="text/javascript" charset="utf-8"></script>
+  <script src="init.js" type="text/javascript" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="/chosen.css">
+  <link rel="stylesheet" href="/prism.css">
+  <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/main.css">
   <link rel="stylesheet" href="/other.css">
 
@@ -86,22 +90,24 @@
 
     <div class="menu">
       <p>Select by Club:<br></p>
-      <select data-placeholder="Begin typing a name to filter..." multiple class="chosen-select" name="test">
-        <option value=""></option>
-        <option>American Black Bear</option>
-        <option>Asiatic Black Bear</option>
-        <option>Brown Bear</option>
-        <option>Giant Panda</option>
-        <option>Sloth Bear</option>
-        <option>Sun Bear</option>
-        <option>Polar Bear</option>
-        <option>Spectacled Bear</option>
-      </select>
+      <div>
+          <select data-placeholder="Type &apos;C&apos; to view" class="chosen-select">
+            <option value=""></option>
+            <option>American Black Bear</option>
+            <option>Asiatic Black Bear</option>
+            <option>Brown Bear</option>
+            <option>Giant Panda</option>
+            <option>Sloth Bear</option>
+            <option>Sun Bear</option>
+            <option>Polar Bear</option>
+            <option>Spectacled Bear</option>
+          </select>
     </div>
 
   </div>
 
   </body>
+
   <div class="index-footer">
     {{> footer}}
   </div>
