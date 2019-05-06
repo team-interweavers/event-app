@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
-  <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="/jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="chosen.jquery.js" type="text/javascript"></script>
   <script src="prism.js" type="text/javascript" charset="utf-8"></script>
   <script src="init.js" type="text/javascript" charset="utf-8"></script>
@@ -90,19 +91,30 @@
 
     <div class="menu">
       <p>Select by Club:<br></p>
-      <div>
-          <select data-placeholder="Type &apos;C&apos; to view" class="chosen-select">
-            <option value=""></option>
-            <option>American Black Bear</option>
-            <option>Asiatic Black Bear</option>
-            <option>Brown Bear</option>
-            <option>Giant Panda</option>
-            <option>Sloth Bear</option>
-            <option>Sun Bear</option>
-            <option>Polar Bear</option>
-            <option>Spectacled Bear</option>
+          <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="4">
+            <option value></option>
+            <option value="American Black Bear">American Black Bear</option>
+            <option value="American White Bear">American White Bear</option>
+            <option value="American Red Bear">American Red Bear</option>
           </select>
-    </div>
+          <script>
+          $(".chosen-select").chosen({max_selected_options: 10});
+          $(".chosen-select").chosen({allow_single_deselect: true});
+          </script>
+
+          <!-- <div class="chosen-container chosen-container-multi" title style="width:350px;"> -->
+            <!-- <ul class="chosen-choices">
+              <li class="search-field">
+                <input class="chosen-search-input" type="text" autocomplete="off" value="Choose a Bear..." tabindex="4">
+              </li>
+            </ul> -->
+            <!-- <div class="chosen-drop">
+              <ul class="chosen-results">
+                <li class="active-result" data-option-array-index="1">American Black Bear</li>
+                <li class="result-selected" data-option-array-index="1">American White Bear</li>
+              </ul>
+          </div> -->
+    <!-- </div> -->
 
   </div>
 
