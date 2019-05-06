@@ -22,6 +22,7 @@ transition:background 0.20s linear;
 border-radius: 8px;
 background-color: var(--c);
 color: var(--p);
+
 }
 
 .index-btn:hover{
@@ -32,6 +33,10 @@ color: var(--c);
 .index-btn:active{
 background-color: var(--a);
 color: var(--c);
+}
+
+.btn-text{
+  font-family: 'Quicksand', sans-serif;
 }
 
 
