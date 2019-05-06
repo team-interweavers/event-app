@@ -486,6 +486,6 @@ ul.breadcrumbs li a:hover {
 
 }
 
-.menu {
-
+.menu p {
+  float:left;
 }
