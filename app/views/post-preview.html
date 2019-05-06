@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="/other.css">
   <title>Create Event Post</title>
 </head>
+
+<div class="post-wrapper">
+
+  <div class="index-header">
+    {{> header}}
+  </div>
+
 <body class="text">
   <ul class="breadcrumbs">
     <li><a href= "/">Home</a></li>
@@ -64,7 +71,7 @@
     </div>
 
     <div class="done-button">
-      <button onclick="location.href= '/post-events/post-preview/event-desc'" class="index-btn index-btn-purple" style="float: right; margin-right: 15%;">Submit</button>
+      <button onclick="location.href= '/post-events/post-preview/event-desc'" class="index-btn index-btn-purple" style="float: right; margin-right: 5%;">Submit</button>
 
 <!--      <script>-->
 <!--          function visitPage() {-->
@@ -77,9 +84,9 @@
 
   </section>
 </body>
-
-<div class="index-footer post-footer">
-  {{> footer}}
+  <div class="index-footer post-footer">
+    {{> footer}}
+  </div>
 </div>
 
 

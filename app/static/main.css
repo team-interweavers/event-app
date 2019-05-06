@@ -211,6 +211,17 @@ color: var(--c);
 
 /* Post Preview and Post styles */
 
+.index-wrapper{
+    /* display: grid; */
+    /*align-content: space-around;*/
+    grid-gap: 2%;
+    background-color: ghostwhite;
+    padding: 2%;
+    /*min-height: 100%;*/
+    height: 100%;
+    grid-template-rows: 0 80% 10%;
+}
+
 .post-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
