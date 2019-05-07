@@ -30,7 +30,7 @@
 
   <body>
     <div class="filter-grid-container">
-        <h2>Filter by<br></h2>
+        <h1 style="font-size: 1.5em; margin-bottom: 5%;">Filter by<br></h1>
         <h3>Categories<br></h3>
 
       <div class="checklist">
@@ -89,13 +89,33 @@
     <h3>Organizer<br></h3>
 
     <div class="menu">
-      <p>Select by Club:&nbsp;</p>
-          <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="4">
-            <option value></option>
-            <option value="American Black Bear">American Black Bear</option>
-            <option value="American White Bear">American White Bear</option>
-            <option value="American Red Bear">American Red Bear</option>
-          </select>
+      <div>
+        <p>Select by Club:&nbsp;</p>
+            <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="4">
+              <option value></option>
+              <option value="American Black Bear">American Black Bear</option>
+              <option value="American White Bear">American White Bear</option>
+              <option value="American Red Bear">American Red Bear</option>
+            </select>
+        </div>
+        <div>
+          <p>Select by Academic Department:&nbsp;</p>
+              <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="5">
+                <option value></option>
+                <option value="American Black Bear">American Black Bear</option>
+                <option value="American White Bear">American White Bear</option>
+                <option value="American Red Bear">American Red Bear</option>
+              </select>
+        </div>
+        <div>
+          <p>Select by Other Department:&nbsp;</p>
+              <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="6">
+                <option value></option>
+                <option value="American Black Bear">American Black Bear</option>
+                <option value="American White Bear">American White Bear</option>
+                <option value="American Red Bear">American Red Bear</option>
+              </select>
+        </div>
           <script>
           $(".chosen-select").chosen({max_selected_options: 10});
           $(".chosen-select").chosen({allow_single_deselect: true});
