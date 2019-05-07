@@ -34,9 +34,10 @@
   </div>
 
   <body>
+    <form action="/explore-events/event-listings/filter/filtered-event-listings" method="post">
     <div class="filter-grid-container">
         <h1 style="font-size: 1.5em; margin-bottom: 5%;">Filter by<br></h1>
-        <h3 style="font-size: 1em;margin-bottom: 2%;">Categories<br></h3>
+        <h3 style="font-size: 1.1em;margin-bottom: 2%;">Categories<br></h3>
 
       <div class="checklist">
         <div class="form-check">
@@ -61,7 +62,7 @@
           </div>
       </div>
 
-    <h3 style="font-size: 1em;margin-bottom: 2%;">Location<br></h3>
+    <h3 style="font-size: 1.1em;margin-bottom: 2%;">Location<br></h3>
 
       <div class="checklist">
         <div class="form-check">
@@ -78,7 +79,7 @@
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-            <label class="form-check-label" for="inlineCheckbox4">Around College Houese on Maine St.</label>
+            <label class="form-check-label" for="inlineCheckbox4">Around College Houses on Maine St.</label>
           </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
@@ -91,9 +92,9 @@
 
       </div>
 
-    <h3 style="font-size: 1em;margin-bottom: 2%;">Time<br></h3>
+    <h3 style="font-size: 1.1em;margin-bottom: 2%;">Time<br></h3>
     <!-- Implementing date/time-->
-    <div class="form-group">
+    <div style="margin-bottom: 2rem;" class="form-group">
       <label for="date-time" class="text">Date and Time</label>
       <div class="form-group">
         <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
@@ -105,34 +106,34 @@
       </div>
 
     </div>
-    <h3 style="font-size: 1em;margin-bottom: 2%;">Organizer<br></h3>
+    <h3 style="font-size: 1.1em;margin-bottom: 2%;">Organizer<br></h3>
 
     <div class="menu" style="margin-bottom: 5%;">
       <div>
         <p>Select by Club:&nbsp;</p>
             <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="1">
               <option value></option>
-              <option value="American Black Bear">American Black Bear</option>
-              <option value="American White Bear">American White Bear</option>
-              <option value="American Red Bear">American Red Bear</option>
+              <option value="Bowdoin Art Society">Bowdoin Art Society</option>
+              <option value="Bowdoin College Finance Society">Bowdoin College Finance Society</option>
+              <option value="Bowdoin Consulting Group">Bowdoin Consulting Group</option>
             </select>
         </div>
         <div>
           <p>Select by Academic Department:&nbsp;</p>
               <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="2">
                 <option value></option>
-                <option value="American Black Bear">American Black Bear</option>
-                <option value="American White Bear">American White Bear</option>
-                <option value="American Red Bear">American Red Bear</option>
+                <option value="Africana Studies">Africana Studies</option>
+                <option value="Biochemistry">Biochemistry</option>
+                <option value="Computer Science">Computer Science</option>
               </select>
         </div>
         <div>
           <p>Select by Other Department:&nbsp;</p>
               <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="3">
                 <option value></option>
-                <option value="American Black Bear">American Black Bear</option>
-                <option value="American White Bear">American White Bear</option>
-                <option value="American Red Bear">American Red Bear</option>
+                <option value="Center for Multicultural Life">Center for Multicultural Life</option>
+                <option value="Sexuality, Women, and Gender Center">Sexuality, Women, and Gender Center</option>
+                <option value="Center for Religious and Spiritual Life">Center for Religious and Spiritual Life</option>
               </select>
         </div>
           <script>
@@ -140,6 +141,13 @@
           $(".chosen-select").chosen({allow_single_deselect: true});
           </script>
   </div>
+
+  <div class="flex-container">
+    <button onclick="location.href='/explore-events/event-listings/';" type="reset" class="index-btn index-btn-purple">Cancel</button>
+    <button onclick="location.href='/explore-events/event-listings/filter/filtered-event-listings';" type="submit" class="index-btn index-btn-purple">Show Results</button>
+  </div>
+
+</form>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

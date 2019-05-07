@@ -210,7 +210,7 @@ i { font-style: italic; }
 .chosen-select-deselect,
 .chosen-select-rtl,
 .chosen-select-width {
-  width: 350px;
+  width: 100%;
 }
 
 .jquery-version-refer {
