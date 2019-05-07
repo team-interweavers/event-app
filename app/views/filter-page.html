@@ -14,6 +14,11 @@
   <script src="prism.js" type="text/javascript" charset="utf-8"></script>
   <script src="init.js" type="text/javascript" charset="utf-8"></script>
 
+  <!-- Bootstrap CSS, TempusDominus CSS, FontAwesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <link rel="stylesheet" href="/chosen.css">
   <link rel="stylesheet" href="/prism.css">
   <link rel="stylesheet" href="/style.css">
@@ -31,7 +36,7 @@
   <body>
     <div class="filter-grid-container">
         <h1 style="font-size: 1.5em; margin-bottom: 5%;">Filter by<br></h1>
-        <h3>Categories<br></h3>
+        <h3 style="font-size: 1em;margin-bottom: 2%;">Categories<br></h3>
 
       <div class="checklist">
         <div class="form-check">
@@ -56,7 +61,7 @@
           </div>
       </div>
 
-    <h3>Location<br></h3>
+    <h3 style="font-size: 1em;margin-bottom: 2%;">Location<br></h3>
 
       <div class="checklist">
         <div class="form-check">
@@ -86,12 +91,26 @@
 
       </div>
 
-    <h3>Organizer<br></h3>
+    <h3 style="font-size: 1em;margin-bottom: 2%;">Time<br></h3>
+    <!-- Implementing date/time-->
+    <div class="form-group">
+      <label for="date-time" class="text">Date and Time</label>
+      <div class="form-group">
+        <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+          <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1" />
+          <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+          </div>
+        </div>
+      </div>
 
-    <div class="menu">
+    </div>
+    <h3 style="font-size: 1em;margin-bottom: 2%;">Organizer<br></h3>
+
+    <div class="menu" style="margin-bottom: 5%;">
       <div>
         <p>Select by Club:&nbsp;</p>
-            <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="4">
+            <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="1">
               <option value></option>
               <option value="American Black Bear">American Black Bear</option>
               <option value="American White Bear">American White Bear</option>
@@ -100,7 +119,7 @@
         </div>
         <div>
           <p>Select by Academic Department:&nbsp;</p>
-              <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="5">
+              <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="2">
                 <option value></option>
                 <option value="American Black Bear">American Black Bear</option>
                 <option value="American White Bear">American White Bear</option>
@@ -109,7 +128,7 @@
         </div>
         <div>
           <p>Select by Other Department:&nbsp;</p>
-              <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="6">
+              <select data-placeholder="Search or select club(s)" class="chosen-select" multiple tabindex="3">
                 <option value></option>
                 <option value="American Black Bear">American Black Bear</option>
                 <option value="American White Bear">American White Bear</option>
@@ -121,6 +140,35 @@
           $(".chosen-select").chosen({allow_single_deselect: true});
           </script>
   </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Moment.js and TempusDominus Bootstrap -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+  <!-- JS for date-time -->
+  <script type="text/javascript">
+    $.extend($.fn.datetimepicker.Constructor.Default, {
+      icons: {
+        time: 'far fa-clock',
+        date: 'far fa-calendar',
+        up: 'fas fa-arrow-up',
+        down: 'fas fa-arrow-down',
+        previous: 'fas fa-chevron-left',
+        next: 'fas fa-chevron-right',
+        today: 'far fa-calendar-check-o',
+        clear: 'far fa-trash',
+        close: 'far fa-times'
+      }
+    });
+    $(function() {
+      $('#datetimepicker1').datetimepicker();
+    });
+  </script>
 
   </body>
 

@@ -212,7 +212,7 @@ color: var(--c);
 
 /* Post Preview and Post styles */
 
-.index-wrapper{
+.post-wrapper{
     /* display: grid; */
     /*align-content: space-around;*/
     grid-gap: 2%;
@@ -487,5 +487,4 @@ ul.breadcrumbs li a:hover {
 }
 
 .menu p {
-  float:left;
 }
