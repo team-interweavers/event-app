@@ -59,9 +59,6 @@ app.get('/', function (req, res) {
   res.render('index')
 });
 
-app.get('/explore-events', function (req, res) {
-  res.render('event-listings')
-});
 
 app.get('/event-listings', function (req, res) {
   res.render('event-listings')

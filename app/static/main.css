@@ -518,3 +518,14 @@ ul.breadcrumbs li a:hover {
 .poster-img{
   max-height:100%;
 }
+
+.filter-btn{
+  margin-bottom: 1rem;
+
+}
+
+a:link {
+  color: blue;
+  font-weight: 900;
+  background-color: transparent;
+  text-decoration: none;
