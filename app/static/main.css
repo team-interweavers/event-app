@@ -502,7 +502,7 @@ ul.breadcrumbs li a:hover {
 
 .listing{
   display: grid;
-  grid-template-columns: 20% 60% 20;;
+  grid-template-columns: 20% 60% 20%;
   background: #EDE7F6;
   border-radius: 1rem;
 }
