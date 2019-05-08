@@ -48,7 +48,7 @@ app.get('/post-events', function (req, res) {
 });
 
 app.get('/my-events', function (req, res) {
-  res.render('event-search')
+  res.render('event-listings')
 });
 
 app.get('/static/post-preview-style.css', function (req, res) {
@@ -60,7 +60,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/explore-events', function (req, res) {
-  res.render('filter-page')
+  res.render('event-listings')
+});
+
+app.get('/event-listings', function (req, res) {
+  res.render('event-listings')
 });
 
 app.listen(port, function () {

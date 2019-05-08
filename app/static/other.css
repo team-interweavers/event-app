@@ -43,7 +43,7 @@ color: var(--c);
 /*SEARCH BAR*/
 form.search-bar input[type=text] {
     padding: 10px;
-    font-size: 9px;
+    font-size: 12px;
     font-family: 'Quicksand', sans-serif;
     border: 1px solid grey;
     float: left;
