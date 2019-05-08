@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="/main.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="post-wrapper">
+    <ul class="breadcrumbs">
+      <li><a href="/">Home</a></li>
+      <li>Event Search</li>
+    </ul>
+    <h1 align=center><strong>Event Search</strong></h1>
+
+    <div class="event-grid">
+
+      <div class="listing">
+        <div class="div-img">
+          <img src="./img/prohibition-poster.png" class="poster-img" alt="Poster of Prohibition Party Event hosted by Howell House">
+        </div>
+        <div class="div-info">
+          <h2><strong>Prohibition</strong></h2>
+          <p>
+            <ul class="card-info">
+              <li><strong>Time:</strong> Saturday, April 20, 2019</li>
+              <li><strong>Location:</strong> Howell House</li>
+              <li><strong>Description:</strong> Join us for our annual roarin' twenties party!</li>
+            </ul>
+          </p>
+        </div>
+        <div class="div-post-btns">
+          <button class="post-btn" id="like" onclick="likeChange()" style="padding-right:8%; padding-left:8%;">♡</button>
+          <button class="post-btn" id="rsvp" onclick="change()">RSVP</button>
+          <script>
+            function likeChange() // no ';' here
+            {
+                var elem = document.getElementById("like");
+                if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
+                else {elem.innerHTML = "♡";}
+            }
+          </script>
+          <script>
+            function change() // no ';' here
+            {
+                var elem = document.getElementById("rsvp");
+                if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
+                else {elem.innerHTML = "RSVP";}
+            }
+          </script>
+        </div>
+
+      </div>
+      <div class="listing">
+        <div class="div-img">
+          <img src="./img/prohibition-poster.png" class="poster-img" alt="Poster of Prohibition Party Event hosted by Howell House">
+        </div>
+        <div class="div-info">
+          <h2><strong>Prohibition</strong></h2>
+          <p>
+            <ul class="card-info">
+              <li><strong>Time:</strong> Saturday, April 20, 2019</li>
+              <li><strong>Location:</strong> Howell House</li>
+              <li><strong>Description:</strong> Join us for our annual roarin' twenties party!</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="listing">
+        <div class="div-img">
+          <img src="./img/prohibition-poster.png" class="poster-img" alt="Poster of Prohibition Party Event hosted by Howell House">
+        </div>
+        <div class="div-info">
+          <h2><strong>Prohibition</strong></h2>
+          <p>
+            <ul class="card-info">
+              <li><strong>Time:</strong> Saturday, April 20, 2019</li>
+              <li><strong>Location:</strong> Howell House</li>
+              <li><strong>Description:</strong> Join us for our annual roarin' twenties party!</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="index-footer">
+      {{> footer}}
+    </div>
+
+  </div>
+</body>
+
+</html>

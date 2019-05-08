@@ -48,7 +48,7 @@ app.get('/post-events', function (req, res) {
 });
 
 app.get('/my-events', function (req, res) {
-  res.render('event-listings')
+  res.render('event-search')
 });
 
 app.get('/static/post-preview-style.css', function (req, res) {
