@@ -47,9 +47,9 @@ app.get('/post-events', function (req, res) {
   res.render('make-post')
 });
 
-app.get('/my-events', function (req, res) {
-  res.render('event-listings')
-});
+// app.get('/my-events', function (req, res) {
+//   res.render('event-listings')
+// });
 
 app.get('/static/post-preview-style.css', function (req, res) {
   res.render('post-preview-style')
@@ -63,6 +63,15 @@ app.get('/', function (req, res) {
 app.get('/event-listings', function (req, res) {
   res.render('event-listings')
 });
+
+app.get('/event-listings/filtered', function (req, res) {
+  res.render('event-listings')
+});
+
+app.get('/event-listings/filter', function (req, res) {
+  res.render('filter-page')
+});
+
 
 app.listen(port, function () {
   console.log('Example app listening on port', port);
