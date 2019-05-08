@@ -417,10 +417,6 @@ li{
   padding-left: 0;
 }
 
-.event-list-container{
-  padding: 2%;
-
-}
 
 .form{
   margin: 2%;
@@ -502,7 +498,7 @@ ul.breadcrumbs li a:hover {
 
 .listing{
   display: grid;
-  grid-template-columns: 20% 50% 30%;
+  grid-template-columns: 30% 40% 30%;
   background: #EDE7F6;
   border-radius: 1rem;
 }
