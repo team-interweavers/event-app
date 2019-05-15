@@ -114,11 +114,10 @@ body{
 /*}*/
 
 .index-btn-purple{
---p: #9C27B0;
---c: #fff;
---h: #af2cc5;
---a: #771e86;
-
+--p: #000000;
+--c: #C6ADE4;
+--h: #DB6900;
+--a: #3A0332;
 }
 
 .index-btn{
@@ -135,15 +134,22 @@ text-align:center;
 text-decoration:none;
 transition:background 0.20s linear;
 /*    round edges */
-border-radius:8px;
+border-radius: 8px;
 background-color: var(--c);
 color: var(--p);
+
 }
 
 .index-btn:hover{
-background-color: var(--p);
+background-color: var(--a);
 color: var(--c);
 }
+
+.index-btn:active{
+background-color: var(--a);
+color: var(--c);
+}
+
 .explore-stories{
     grid-template-columns: auto auto auto auto;
     display: grid;
@@ -520,8 +526,35 @@ ul.breadcrumbs li a:hover {
 }
 
 .filter-btn{
-  margin-bottom: 1rem;
+  margin-bottom: 5%;
+}
 
+.filter-link{
+  color: black;
+  background-color: #C6ADE4 !important;
+  font-size: 18px;
+  padding: .2rem;
+  border: 2px solid #000;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  /* Get rid of padding on left and right in the "filter" button */
+  margin-left:45%;
+  margin-right:45%;
+}
+
+.filter-link:hover,.filter-link:active{
+  color: black;
+  background-color: #3A0332 !important;
+  font-size: 18px;
+  padding: .2rem;
+  border: 2px solid #000;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  /* Get rid of padding on left and right in the "filter" button */
+  margin-left:45%;
+  margin-right:45%;
 }
 
 a:link {
@@ -529,3 +562,4 @@ a:link {
   font-weight: 900;
   background-color: transparent;
   text-decoration: none;
+}
