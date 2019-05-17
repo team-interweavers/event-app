@@ -22,7 +22,7 @@
     <li><a href="/post-events">Post an Event</a></li>
     <li>Post Preview</li>
   </ul>
-
+  <!-- Show full description and image about the event -->
   <section class="post-container">
     <div class="event-image">
       <img src="/img/prohibition-poster.png" alt="Prohibition Party event poster hosted at Howell House" class="responsive">
@@ -33,9 +33,11 @@
     <div class="event-details">
       <p><strong>Event Category: </strong>Social<br><strong>Organizer: </strong>Howell House<br><strong>Time: </strong>Saturday, April 20 2019 @ 8pm<br><strong>Location: </strong>Howell House</p>
     </div>
+    <!-- Implement buttons that enable users to like and rsvp to an event -->
     <div class="post-btns">
       <button class="post-btn" id="like" onclick="likeChange()" style="padding-right:8%; padding-left:8%;">♡</button>
       <button class="post-btn" id="rsvp" onclick="change()">RSVP</button>
+      <!-- Implement javascript for the "like" and "rsvp" buttons-->
       <script>
         function likeChange()
         {
@@ -53,7 +55,7 @@
         }
       </script>
     </div>
-
+    <!-- Implement scrollable list of people attending the event -->
     <div class="participant-list">
       <p class="post-title"><strong>People Attending this Event<br></strong></p>
         <div class="scroll">
@@ -70,14 +72,13 @@
       <p class="post-title"><strong>Detailed Description</strong></p>
       <p class="post-text">Take a step back in time and party like it's 1929! Come to Howell's speakeasy for good music, food, mocktails, and games. Dressing up is not required.</p>
     </div>
-
+    <!-- Implement "Edit" and "Submit" buttons -->
     <div class="edit-button">
       <button onclick="location.href='/post-events';" class="index-btn index-btn-purple" style="float: left;">Edit</button>
     </div>
     <div class="submit-button">
       <button onclick="location.href= '/post-events/post-preview/event-desc'" class="index-btn index-btn-purple"style="float: right;">Submit</button>
-    </div>
-
+    </div> 
   </section>
 </body>
 <!-- Implement footer -->
