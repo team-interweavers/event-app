@@ -6,11 +6,14 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 Download [Node.js](https://nodejs.org/en/)
 
-### Installing
+### Installing and Running Code
 1. Download zip of app folder
 2. Open command line and change directory to the app folder
 3. Type node app.js
 4. On a browser, go to [localhost:3000](localhost:3000)
+
+### Local Server
+This project is run on a local server, which is programmed in app.js. All html, or "static" files are in the static folder and all css files are in the views folder. 
 
 ## User Input for the App
 When testing the app, please input the following information in the **Post an Event** page.
