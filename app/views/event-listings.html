@@ -10,23 +10,29 @@
 
 <body>
   <div class="post-wrapper">
+
+    <!--Breadcrumb Navigation-->
     <ul class="breadcrumbs">
       <li><a href="/">Home</a></li>
       <li>Event Listings</li>
     </ul>
+
     <h1 align=center><strong>Event Listings</strong></h1>
+
     <div class="filter-btn">
-      <!-- <button onclick="location.href= '/post-events/post-preview/event-desc'" class="index-btn index-btn-purple" >Filter</button> -->
       <a href="/event-listings/filter" class="filter-link">Filter</a>
     </div>
 
+    <!--Event listings container-->
 
     <div class="event-grid">
-
       <div class="listing">
+        <!--Event Poster-->
         <div class="div-img">
           <img src="./img/prohibition-poster.png" class="poster-img" alt="Poster of Prohibition Party Event hosted by Howell House">
         </div>
+
+        <!--Event Basic Details-->
         <div class="div-info">
           <h2><strong>Prohibition</strong></h2>
           <p>
@@ -37,28 +43,38 @@
             </ul>
           </p>
         </div>
+
+        <!--Like Button and RSVP Button-->
         <div class="div-post-btns">
           <button class="post-btn" id="like" onclick="likeChange()" style="padding-right:8%; padding-left:8%;">♡</button>
           <button class="post-btn" id="rsvp" onclick="change()">RSVP</button>
-          <!--responsive buttons-->
+          <!--Javascript-responsive buttons-->
           <script>
             function likeChange() // no ';' here
             {
-                var elem = document.getElementById("like1");
-                if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
-                else {elem.innerHTML = "♡";}
+              var elem = document.getElementById("like1");
+              if (elem.innerHTML == "♡") {
+                elem.innerHTML = "❤️";
+              } else {
+                elem.innerHTML = "♡";
+              }
             }
           </script>
           <script>
             function change() // no ';' here
             {
-                var elem = document.getElementById("rsvp1");
-                if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
-                else {elem.innerHTML = "RSVP";}
+              var elem = document.getElementById("rsvp1");
+              if (elem.innerHTML == "RSVP") {
+                elem.innerHTML = "Cancel RSVP";
+              } else {
+                elem.innerHTML = "RSVP";
+              }
             }
           </script>
         </div>
       </div>
+
+      <!--Repetitions of event listing above-->
 
       <div class="listing">
         <div class="div-img">
@@ -80,17 +96,23 @@
           <script>
             function likeChange() // no ';' here
             {
-                var elem = document.getElementById("like1");
-                if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
-                else {elem.innerHTML = "♡";}
+              var elem = document.getElementById("like1");
+              if (elem.innerHTML == "♡") {
+                elem.innerHTML = "❤️";
+              } else {
+                elem.innerHTML = "♡";
+              }
             }
           </script>
           <script>
             function change() // no ';' here
             {
-                var elem = document.getElementById("rsvp1");
-                if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
-                else {elem.innerHTML = "RSVP";}
+              var elem = document.getElementById("rsvp1");
+              if (elem.innerHTML == "RSVP") {
+                elem.innerHTML = "Cancel RSVP";
+              } else {
+                elem.innerHTML = "RSVP";
+              }
             }
           </script>
         </div>
@@ -116,24 +138,28 @@
           <script>
             function likeChange() // no ';' here
             {
-                var elem = document.getElementById("like2");
-                if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
-                else {elem.innerHTML = "♡";}
+              var elem = document.getElementById("like2");
+              if (elem.innerHTML == "♡") {
+                elem.innerHTML = "❤️";
+              } else {
+                elem.innerHTML = "♡";
+              }
             }
           </script>
           <script>
             function change() // no ';' here
             {
-                var elem = document.getElementById("rsvp2");
-                if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
-                else {elem.innerHTML = "RSVP";}
+              var elem = document.getElementById("rsvp2");
+              if (elem.innerHTML == "RSVP") {
+                elem.innerHTML = "Cancel RSVP";
+              } else {
+                elem.innerHTML = "RSVP";
+              }
             }
           </script>
         </div>
       </div>
     </div>
-
-
 
     <div class="index-footer">
       {{> footer}}
