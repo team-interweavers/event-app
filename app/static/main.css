@@ -368,8 +368,14 @@ color: var(--c);
   bottom:-10px; */
 }
 
-.done-button {
-  align-self: center;
+.edit-button {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.submit-button {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 6;
@@ -546,6 +552,7 @@ ul.breadcrumbs li a:hover {
 .filter-link:hover,.filter-link:active{
   color: black;
   background-color: #3A0332 !important;
+  color: #C6ADE4;
   font-size: 18px;
   padding: .2rem;
   border: 2px solid #000;

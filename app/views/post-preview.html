@@ -1,5 +1,6 @@
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,17 +11,19 @@
 </head>
 
 <div class="post-wrapper">
-
+<!-- Implement header -->
   <div class="index-header">
     {{> header}}
   </div>
 
+<!-- Implement breadcrumbs -->
 <body class="text">
   <ul class="breadcrumbs">
     <li><a href= "/">Home</a></li>
     <li><a href="/post-events">Post an Event</a></li>
     <li>Post Preview</li>
   </ul>
+
   <section class="post-container">
     <div class="event-image">
       <img src="/img/prohibition-poster.png" alt="Prohibition Party event poster hosted at Howell House" class="responsive">
@@ -29,14 +32,13 @@
       <p style="font-weight: 2000;">Prohibition</p>
     </div>
     <div class="event-details">
-    <!--Need to enable input of details-->
       <p><strong>Event Category: </strong>Social<br><strong>Organizer: </strong>Howell House<br><strong>Time: </strong>Saturday, April 20 2019 @ 8pm<br><strong>Location: </strong>Howell House</p>
     </div>
     <div class="post-btns">
       <button class="post-btn" id="like" onclick="likeChange()" style="padding-right:8%; padding-left:8%;">♡</button>
       <button class="post-btn" id="rsvp" onclick="change()">RSVP</button>
       <script>
-        function likeChange() // no ';' here
+        function likeChange()
         {
             var elem = document.getElementById("like");
             if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
@@ -44,7 +46,7 @@
         }
       </script>
       <script>
-        function change() // no ';' here
+        function change()
         {
             var elem = document.getElementById("rsvp");
             if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
@@ -70,20 +72,16 @@
       <p class="post-text">Take a step back in time and party like it's 1929! Come to Howell's speakeasy for good music, food, mocktails, and games. Dressing up is not required.</p>
     </div>
 
-    <div class="done-button">
-      <button onclick="location.href= '/post-events/post-preview/event-desc'" class="index-btn index-btn-purple" style="float: right; margin-right: 5%;">Submit</button>
-
-<!--      <script>-->
-<!--          function visitPage() {-->
-<!--              window.open("event-desc.html", "_blank");-->
-<!--            // location.href("{{eventDescUrl}}");-->
-<!--          }-->
-<!--      </script>-->
-<!--      <button onclick="visitPage();" class="button" style="float: right;">Submit</button>-->
+    <div class="edit-button">
+      <button onclick="location.href='/post-events';" class="index-btn index-btn-purple" style="float: left;">Edit</button>
+    </div>
+    <div class="submit-button">
+      <button onclick="location.href= '/post-events/post-preview/event-desc'" class="index-btn index-btn-purple"style="float: right;">Submit</button>
     </div>
 
   </section>
 </body>
+<!-- Implement footer -->
   <div class="index-footer post-footer">
     {{> footer}}
   </div>

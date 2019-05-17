@@ -44,7 +44,7 @@
           <script>
             function likeChange() // no ';' here
             {
-                var elem = document.getElementById("like");
+                var elem = document.getElementById("like1");
                 if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
                 else {elem.innerHTML = "♡";}
             }
@@ -52,14 +52,14 @@
           <script>
             function change() // no ';' here
             {
-                var elem = document.getElementById("rsvp");
+                var elem = document.getElementById("rsvp1");
                 if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
                 else {elem.innerHTML = "RSVP";}
             }
           </script>
         </div>
-
       </div>
+
       <div class="listing">
         <div class="div-img">
           <img src="./img/prohibition-poster.png" class="poster-img" alt="Poster of Prohibition Party Event hosted by Howell House">
@@ -74,7 +74,28 @@
             </ul>
           </p>
         </div>
+        <div class="div-post-btns">
+          <button class="post-btn" id="like1" onclick="likeChange()" style="padding-right:8%; padding-left:8%;">♡</button>
+          <button class="post-btn" id="rsvp1" onclick="change()">RSVP</button>
+          <script>
+            function likeChange() // no ';' here
+            {
+                var elem = document.getElementById("like1");
+                if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
+                else {elem.innerHTML = "♡";}
+            }
+          </script>
+          <script>
+            function change() // no ';' here
+            {
+                var elem = document.getElementById("rsvp1");
+                if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
+                else {elem.innerHTML = "RSVP";}
+            }
+          </script>
+        </div>
       </div>
+
       <div class="listing">
         <div class="div-img">
           <img src="./img/prohibition-poster.png" class="poster-img" alt="Poster of Prohibition Party Event hosted by Howell House">
@@ -89,8 +110,27 @@
             </ul>
           </p>
         </div>
+        <div class="div-post-btns">
+          <button class="post-btn" id="like2" onclick="likeChange()" style="padding-right:8%; padding-left:8%;">♡</button>
+          <button class="post-btn" id="rsvp2" onclick="change()">RSVP</button>
+          <script>
+            function likeChange() // no ';' here
+            {
+                var elem = document.getElementById("like2");
+                if (elem.innerHTML=="♡") {elem.innerHTML = "❤️";}
+                else {elem.innerHTML = "♡";}
+            }
+          </script>
+          <script>
+            function change() // no ';' here
+            {
+                var elem = document.getElementById("rsvp2");
+                if (elem.innerHTML=="RSVP") {elem.innerHTML = "Cancel RSVP";}
+                else {elem.innerHTML = "RSVP";}
+            }
+          </script>
+        </div>
       </div>
-
     </div>
 
 
